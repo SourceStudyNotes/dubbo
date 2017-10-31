@@ -23,8 +23,9 @@ import com.alibaba.dubbo.common.utils.ClassHelper;
 
 /**
  * Abstract compiler. (SPI, Prototype, ThreadSafe)
- * 
  * @author william.liangf
+ *
+ * 先通过app加载器去加载,如果没有找到,再通过编译器去变编译。
  */
 public abstract class AbstractCompiler implements Compiler {
     
